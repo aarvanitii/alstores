@@ -1,0 +1,9 @@
+.text-white{
+    color:white;
+}
+.text-red{
+    color:#c14d4d;
+}
+nav a:hover{
+    color:#c14d4d;
+}
