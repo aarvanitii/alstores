@@ -7,3 +7,19 @@
 nav a:hover{
     color:#c14d4d;
 }
+.navbar-title {
+    float: left;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 38px;
+    line-height: 20px;
+    color: #2e2e2e;
+}
+.navbar-title:hover,
+.navbar-title:focus {
+    text-decoration: none;
+}
+.navbar-title > img {
+    display: block;
+    height: 100%;
+}

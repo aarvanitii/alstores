@@ -51,13 +51,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/black-logo.svg" style="margin-top:-20px;width:80px;height:80px;" data-active-url="img/logo.png" alt=""></a>
+                <div class="col-sm-3">
+                    <a class="navbar-brand" href="#"><img src="img/black-logo.svg" style="margin-top:-10%;width:80px;height:80px;" data-active-url="img/logo.png" alt=""></a>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="navbar-title">Al Stores</h1>
+                </div>
+
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
 					<li><a href="#intro">Intro</a></li>
-					<li><a href="#services">Les Services</a></li>
+					<li><a href="#workshops">Workshops</a></li>
+					<li><a href="#services">Nos services</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -71,8 +78,8 @@
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h3 class="light white">Obtenez vos meilleurs stores.</h3>
-							<h1 class="white typed">It's the only place you have to live.</h1>
+							<h3 class="light white">La meilleur qualité</h3>
+							<h1 class="white typed">Dans le seul lieux où vous vivez.</h1>
 							<span class="typed-cursor">|</span>
 						</div>
 					</div>
@@ -86,17 +93,16 @@
 			<div class="row intro-tables">
 				<div class="col-md-4">
 					<div class="intro-table intro-table-first">
-						<h5 class="white heading">Info</h5>
+						<h5 class="white heading">Nous contacter</h5>
                         <div class="owl-carousel owl-schedule bottom">
 							{{#data.info}}
 							<div class="item">
-								<h5 class="white heading">{{label}}</h5>
 								<div class="schedule-row row">
 									<div class="col-xs-6">
 										<h5 class="regular white">{{row1-text1}}</h5>
 									</div>
 									<div class="col-xs-6 text-right">
-										<h5 class="white">{{row1-text2}}</h5>
+										<h6 class="white">{{row1-text2}}</h5>
 									</div>
 								</div>
 								<div class="schedule-row row">
@@ -104,10 +110,9 @@
 										<h5 class="regular white">{{row2-text1}}</h5>
 									</div>
 									<div class="col-xs-6 text-right">
-										<h5 class="white">{{row2-text2}}</h5>
+										<h6 class="white">{{row2-text2}}</h5>
 									</div>
 								</div>
-								
 								<div class="schedule-row row">
 									<div class="col-xs-6">
 										<h5 class="regular white">{{row3-text1}}</h5>
@@ -116,52 +121,55 @@
 										<h5 class="white">{{row3-text2}}</h5>
 									</div>
 								</div>
-								
 							</div>
 							{{/data.info}}
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Premium Membership</h5>
+					<div class="intro-table intro-table-hover intro-table-third">
+						<h5 class="white heading hide-hover">Nos services</h5>
 						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Register Today</h4>
-							<h4 class="white heading small-pt">20% Discount</h4>
-							<a href="#" class="btn btn-white-fill expand">Register</a>
+							<h4 class="white heading small-heading no-margin regular">Voir nos services</h4>
+							<a href="#services" class="btn btn-white-fill expand">Cliquez ici</a>
 						</div>
 					</div>
-				</div>
+				</div>				
 				<div class="col-md-4">
-					<div class="intro-table intro-table-third">
-						<h5 class="white heading">Happy Clients</h5>
-						<div class="owl-testimonials bottom">
-							<div class="item">
-								<h4 class="white heading content">I couldn't be more happy with the results!</h4>
-								<h5 class="white heading light author">Adam Jordan</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">I can't believe how much better I feel!</h4>
-								<h5 class="white heading light author">Greg Pardon</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
-								<h5 class="white heading light author">Christina Goldman</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
-								<h5 class="white heading light author">Christina Goldman</h5>
-							</div>								
+					<div class="intro-table intro-table-hover">
+						<h5 class="white heading hide-hover">Devis</h5>
+						<div class="bottom">
+							<h4 class="white heading small-heading no-margin regular">Demander un devis</h4>
+							<a href="#contact" class="btn btn-white-fill expand">Cliquez ici</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>		
+	</section>
+	<section id="workshops" class="section section-padded gray-bg">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Ateliers</h2>
+				<h4 class="light muted text-red">Achieve the best results with our wide variety of training options!</h4>
+			</div>
+			<div class="row services">
+				{{#data.workshops}}
+				<div class="col-xs-6 col-md-3">
+					<a href="#" class="thumbnail">
+					<img src="img/work/{{imgUrl}}" alt="...">
+					</a>
+				</div>
+				{{/data.workshops}}
+			</div>
+			
 		</div>
+	<div class="cut cut-top"></div>
 	</section>
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
-				<h2>Les services</h2>
+				<h2>Nos services</h2>
 				<h4 class="light muted text-red">Achieve the best results with our wide variety of training options!</h4>
 			</div>
 			
@@ -182,6 +190,8 @@
 		</div>
 		<div class="cut cut-bottom"></div>
 	</section>
+
+	
 	<section id="contact" class="section gray-bg">
 		<div class="container">
 			<div class="row title text-center">

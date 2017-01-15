@@ -464,6 +464,7 @@ section {
 	}
 }
 
+
 .services {
 	margin: 40px 0;
 }
@@ -1027,6 +1028,9 @@ footer .social-footer li:hover a {
 
 .gray-bg {
 	background: #f7f7f7;
+}
+.red-bg {
+	background: #c76d6c;
 }
 
 .blue {
